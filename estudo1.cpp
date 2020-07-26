@@ -23,6 +23,7 @@ int main() {
 		std::cout<<"Esses numeros sao iguais!!!";
 	}
 	
+	system("pause");
 	
 	return 0;
 }
