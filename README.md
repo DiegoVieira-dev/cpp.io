@@ -1,2 +1,2 @@
 # Tests code c++
-Pequeno promgrama para indicar se um número é maior do que outro!!!
+Pequeno programa para indicar se um número é maior do que outro!!!
