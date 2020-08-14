@@ -13,7 +13,21 @@ Pseudocódigo:
 tipo inteiros numconta, totintens;
 tipo p.flut salprinc, totcredm, limit, saldo,cred = 800;
 
-saldo = salprinc + (totitens * 
+saldo = salprinc + totitens - cred;
+
+solicite a entradado inteiro = numconta;
+insira o total de compras mês;
+
+subtrair o total gasto esse mês do credito disponivel
+
+total disponivel no mês = cred - salprinc;
+
+fazer enquanto numero da conta for diferente de -1:
+Pedir numero da conta;
+caso o numero da conta seja diferente de -1:
+
+
+ 
 
 
 
