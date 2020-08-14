@@ -1,2 +1,2 @@
-# Tests code c++
-Pequeno programa para indicar se um número é maior do que o outro
+# Commit para estudo e aprendzado do livro: C++ como programar da Deitel!
+
