@@ -16,18 +16,39 @@ e) Limite de crédito permitido;
 int main() {
 	
 	int num;
-	float saldom, limite = 800, totm;
+	float saldom, totm, nsaldo;
 	
-	while
+	while(true){
 	
-    std::cout<<"Informe o numero de sua conta ou (-1) para finalizar: ";
+    std::cout<<"\nInforme o numero de sua conta ou (-1) para finalizar: ";
     std::cin>>num;
-	std::cout<<"Saldo no inicio do mes: R$";
+    
+    if(num == -1){
+		
+		std::cout<<"\n\nNenhum limite foi excedido, podemos finalizar o programa!";
+		break;
+		
+		}	
+    
+    std::cout<<"\nSaldo no inicio do mes: R$";
 	std::cin>>saldom;
-	std::cout<<"O total de itens comprados nese mes: R$";
+	std::cout<<"\nO total de itens comprados nese mes: R$";
 	std::cin>>totm;
-	std::cout<<"O limote estipulado para esta conta e de: R$"<<limite<<std::endl;
+	std::cout<<"\n\nO limite atual para esta conta neste mes e de: R$"<<saldom - totm<<std::endl;
 	
+	nsaldo = saldom - totm;
+	
+	if(nsaldo<0){
+		
+		std::cout<<"\n\nConta cliente: "<<num<<std::endl;
+		std::cout<<"Limite de credito: R$"<<saldom<<std::endl;
+		std::cout<<"Saldo atual: R$"<<nsaldo<<std::endl;
+		std::cout<<"\n\nSeu limite de credito foi excedido, entao se conforme porque vc não vai comprar mais nada!!!";
+		break;
+		
+		}
+	
+    }
 	
 	return 0;
 }
