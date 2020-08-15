@@ -1,4 +1,7 @@
- 2.17 Desenvolva um programa em C++ que determinará se um cliente de uma loja excedeu o limite de credito em sua conta corrente. Para cada cliente, os seguintes datos estão disponíveis.
+#include <iostream>
+
+/* 2.17 Desenvolva um programa em C++ que determinará se um cliente de uma loja excedeu o limite de credito em sua conta corrente. 
+Para cada cliente, os seguintes datos estão disponíveis.
 
 a) Número da conta(um inteiro);
 b) Saldo no princípio do mês;
@@ -6,25 +9,28 @@ c) Total de todos os itens comprados a crédito por este cliente neste mês;
 d) Total de todos os créditos do cliente nesta conta neste mês;
 e) Limite de crédito permitido;
 
-  O programa deve receber  como entrada cada um destes fatos, calcula o novo saldo (= saldo inicial + débitos - créditos) e determinar se o novo saldo excede o limite de crédito do cliente. Para aqueles clientes cujo limite de crédito for excedido, o programa deve exibir o número da conta do clientte, o limite de crédito, o novo saldo e a mensagem "Limite de crédito excedido." 
+  O programa deve receber  como entrada cada um destes fatos, calcula o novo saldo (= saldo inicial + débitos - créditos) 
+  e determinar se o novo saldo excede o limite de crédito do cliente. Para aqueles clientes cujo limite de crédito for excedido, 
+  o programa deve exibir o número da conta do clientte, o limite de crédito, o novo saldo e a mensagem "Limite de crédito excedido."  */
 
-Pseudocódigo:
-
-tipo inteiros numconta, totintens;
-tipo p.flut salprinc, totcredm, limit, saldo,cred = 800;
-
-saldo = salprinc + totitens - cred;
-
-solicite a entradado inteiro = numconta;
-insira o total de compras mês;
-
-subtrair o total gasto esse mês do credito disponivel
-
-total disponivel no mês = cred - salprinc;
-
-fazer enquanto numero da conta for diferente de -1:
-Pedir numero da conta;
-caso o numero da conta seja diferente de -1:
+int main() {
+	
+	int num;
+	float saldom, limite = 800, totm;
+	
+	while
+	
+    std::cout<<"Informe o numero de sua conta ou (-1) para finalizar: ";
+    std::cin>>num;
+	std::cout<<"Saldo no inicio do mes: R$";
+	std::cin>>saldom;
+	std::cout<<"O total de itens comprados nese mes: R$";
+	std::cin>>totm;
+	std::cout<<"O limote estipulado para esta conta e de: R$"<<limite<<std::endl;
+	
+	
+	return 0;
+}
 
 
  
