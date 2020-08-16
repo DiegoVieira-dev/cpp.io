@@ -1,0 +1,36 @@
+#include <iostream>
+
+/* Uma grande empresa química paga a seu pessoal de vendas com base em comissão. O pessoal de vendas recebe
+R$200 por semana mais 9% de suas vendas brutas daquela semana. Por exemplo, um vendedor que vende R$5000 em 
+substâncias químicas em uma semana recebe R$200 mais 9% de R$5000, ou um total de R$650. Desenvola um programa
+em C++ que receba como entrada as vendas de cada vendedor na semana anterior e que calcula e exibe o salário
+daquele vendedor. Processe os números de cada um de cada vez.*/
+
+int main(){
+
+    float sal, vend;
+  
+    
+    while(vend != -1){
+		
+		sal = (vend+(vend * 9/100)) + 200;
+		
+		std::cout<<"\nDigite o numero de vendas da semana ou -1 para finalizar: ";
+        std::cin>>vend;
+        
+        if(vend == -1){
+			
+			std::cout<<"\n\n\nPrograma finalizado!";
+			 break;
+			}
+        
+        sal = (vend+(vend * 9/100)) + 200;
+        
+        std::cout<<"Seu salario e de : R$"<<sal;
+		
+    }
+
+
+
+    return 0;
+}
