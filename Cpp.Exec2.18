@@ -6,31 +6,42 @@ substâncias químicas em uma semana recebe R$200 mais 9% de R$5000, ou um total
 em C++ que receba como entrada as vendas de cada vendedor na semana anterior e que calcula e exibe o salário
 daquele vendedor. Processe os números de cada um de cada vez.*/
 
-int main(){
+#include <iostream>
 
-    float sal, vend;
-  
-    
-    while(vend != -1){
+using namespace std;
+
+int main() {
+	
+	float salh, h;
+	
+	
+	while(h != -1){
 		
-		sal = (vend+(vend * 9/100)) + 200;
+		cout<<"\nInforme as horas trabalhadas ou digite -1 para finalizar: ";
+		cin>>h;
 		
-		std::cout<<"\nDigite o numero de vendas da semana ou -1 para finalizar: ";
-        std::cin>>vend;
-        
-        if(vend == -1){
+		if(h == -1){
 			
-			std::cout<<"\n\n\nPrograma finalizado!";
-			 break;
+			cout<<"\n\nPrograma finalizado!";
+			break;
+	}else{
+		if(h >= 40){
+			
+			cout<<"\nInfome seu salario hora (R$00.00): ";
+			cin>>salh;
+			cout<<"\nSeu salario bruto e de: R$"<<salh/2 + (salh * h);
+		}else{
+			if(h < 40){
+				cout<<"\nInfome seu salario hora (R$00.00): ";
+				cin>>salh;
+				cout<<"\nSeu salario bruto e de: R$"<<salh * h;
 			}
-        
-        sal = (vend+(vend * 9/100)) + 200;
-        
-        std::cout<<"Seu salario e de : R$"<<sal;
+		}
 		
-    }
-
-
-
-    return 0;
+		
+	  }
+	
+	} 
+	
+	return 0;
 }
