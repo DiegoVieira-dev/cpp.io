@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	
+	int n , count = 1;
+	
+	while(count <=10){
+		
+		cout<<"\nDigite um numero qualquer: ";
+		cin>>n;
+		count++;
+		
+		
+		if(count>=11){
+			
+			cout<<"O maior numero e: "<<(n>count)<<endl;
+		}
+	}
+	
+	
+	return 0;
