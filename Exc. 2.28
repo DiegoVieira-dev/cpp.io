@@ -1,26 +1,33 @@
 #include <iostream>
-
 using namespace std;
 
-  int main(){
-	  
-	  int n, i = 0;
-	  
-	  cout<<"Digite o tamanho do quadrado que voce quer: ";
-	  cin>>n;
-	  
-	  while(n>0) {
-		  
-		  i=n;
-		  
-		  while(i == n){
-			  
-			  cout<<"*";
-			  cout<<""
-			  i+=n;
-			  }
-		  --n;
-		  }
-	 
+#include <iomanip>
+using std::setw;
+
+int main(){
+	
+	int n, i=0, p=0;
+	
+	cout<<"Me diga o tamanho do quadrado que voce quer: ";
+	cin>>n;
+	
+	while(i<=n){
+		
+		cout<<"*";
+		i++;
+
+		if(i == n){
+			
+			while(true){
+			p+=i;
+			cout<<"\n*"<<setw(n-1);
+			
+			if(p==n){
+				cout<<"*****";
+				break;
+				}
+			}
+			}
+}
 return 0;
 }
