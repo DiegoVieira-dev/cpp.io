@@ -6,7 +6,7 @@ using std::setw;
 
 int main(){
 	
-	int n, i=0, p=0, f=0;
+	int n, i=0, p=2, f=0;
 	
 	cout<<"Me diga o tamanho do quadrado que voce quer: ";
 	cin>>n;
@@ -16,16 +16,15 @@ int main(){
 		cout<<"*";
 		i++;
 
-		if(i == n){
-		p = i - n;	
-			while(p < n){
-			cout<<"\n*"<<setw(n)<<"*\n";
-			p++;
-				if(p == n){
-				f = p - n;
-				 while(f < n-1){
-				 	cout<<"*";
-				 	f++;
+		if(i == n){	
+		  while(p < n){
+	     	  cout<<"\n*"<<setw(n)<<"*\n";
+		  p++;
+			if(p == n){
+			f = p - n;
+			     while(f < n-1){
+			     cout<<"*";
+			     f++;
 				 }
 			}
 		}
