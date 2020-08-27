@@ -1,2 +1,2 @@
-# Commit para estudo e aprendizado do livro: C++ como programar da Deitel!
+# Repositório de resolução dos exercício do livro C++ como programar, da Deitel!
 
