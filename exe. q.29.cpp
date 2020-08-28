@@ -15,21 +15,25 @@ int main() {
     d = ((((n/10)-a*1000)-b * 100)-c * 10);
     e = ((((n - a * 10000)-b * 1000)-c*100)-d * 10);
     
-	if(10000<n<99999){
+	if(10000<n && n<99999 ){
 	
-    	if(b == d && a == e){
+    	if(b == d && a == e ){
     	
     	cout<<"Esse numero e um palindromo!!";
 		}else{
 		cout<<"Esse numero nao e um palindromo!!";
 		}
-	
-		if(n/10000<0){
-		cout<<"Digite 5 digitos por favor, tente de novo!";
-		}
 	}else{
-		cout<<"Voce digitou um numero menor que 2 digitos. Tente de novo!!!";
+	if(n % 1000 !=0 && n % 100 !=0 ){
+		cout<<"Digite 5 digitos por favor, tente de novo!";
+			}
+	if (n == 00000){
+		cout<<"Esse numero e um palindromo!!";	
+		}		
 	}
+	
+	
+		
 	
 	return 0;
 }
