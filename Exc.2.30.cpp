@@ -17,7 +17,7 @@ int main() {
 	cin>>n;
 	
 	a = (n/10000000);
-        b = ((n/1000000) - a *10);
+	b = ((n/1000000) - a *10);
         c = (((n/100000) - a * 100) - b * 10);
         d = ((((n/10000) -a * 1000)- b * 100)-c * 10);
         e = (((((n/1000) - a * 10000)- b * 1000)-c*100)-d * 10); 
@@ -25,36 +25,43 @@ int main() {
 	g = (((((((n/10) - a * 1000000)- b * 100000)- c * 10000)- d * 1000)- e *100) - f *10); 
 	h = (((((((n - a * 10000000)- b * 1000000)- c * 100000)- d * 10000)- e * 1000) - f * 100)- g * 10);
 	
-	if(a!=0){
+	if(a!=0 && a==1){
 		a = 8;
 	}
-	if(b!=0){
+	if(b!=0 && b==1){
 		b = 7;
 	}
-	if(c!=0){
+	if(c!=0 && c==1){
 		c = 6;
 	}
-	if(d!=0){
+	if(d!=0 && d==1){
 		d = 5;		
 	}
-	if(e!=0){
+	if(e!=0 && e==1){
 		e = 4;
 	}
-	if(f!=0){
+	if(f!=0 && f==1){
 		f = 3;
 	}
-	if(g!=0){
+	if(g!=0 && g==1){
 		g = 2;
 	}
-	if(h!=0){
+	if(h!=0 && h==1){
 		h = 1;
-	}
-	total = a + b + c + d + e + f + g + h;
-							
-						
-					
-	cout<<total;
+	}else{
+	if(a>1 && b>1 && c>1 && d>1 && e>1 && f>1 && g>1 && h>1 && n>8 ){
+			
+			cout<<"\n\nDigite um byte ou tente de novo!\n\n";	
+			
+	system("pause");
+		}else{
+		
+		total = a + b + c + d + e + f + g + h;	
 	
+		cout<<"\n\nEsse byte equivale ao numero: "<< total << endl;
+	
+	}
+    }
 	
 	
 	return 0;
