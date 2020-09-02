@@ -5,78 +5,29 @@
  * depois 8, etc. Assim, o numero decimal 234 pode ser interpretado como 4 * 1 + 3 * 10 + 2 * 100. O equivalente decimal do número binário 1101 é: 1 * 1
  * + 0 * 2 + 1 * 4 +1 * 8 ou 13).*/
 
-#include <iostream>
-#include <math.h>
-
-using namespace std;
-
 int main() {
 	
-	int bin,i = 0, a, b, c, d, e, f, g, h, j;
+	int n, a, b, c, d, e, f, g, h, total;
 	
 	cout<<"Digite um byte qualquer: ";
-	cin>>bin;
-	while(i<8,i++){
-		
-		if(i==0){
-			a = (bin/pow(10,8));
-			if(a!=0){
-				a = 1;
-			}
-		}else{
-			if(i==1){
-				b = (bin/pow(10,7));
-				if(b!=0){
-					b = 2;
-				}
-			}else{
-				if(i==2){
-					c = (bin/pow(10,6));
-					if(c!=0){
-						c = 3;
-					}
-				}else{
-					if(i==3){
-						d = (bin/pow(10,5));
-						if(d!=0){
-							d = 4;
-						}
-					}else{
-						if(i==4){
-							e = (bin/pow(10,4));
-							if(e!=0){
-								e = 5;
-							}
-						}else{
-							if(i==5){
-								f = (bin/pow(10,3));
-								if(f!=0){
-									f = 6;
-								}
-							}else{
-								if(i==6){
-									g = (bin/pow(10,2));
-									if(g!=0){
-										g = 7;
-									}
-								}else{
-									if(i==7){
-										h = (bin/pow(10,1));
-										if(h!=0){
-											h = 8;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-				}
-			}
-			
-	}
+	cin>>n;
 	
-	cout<<g ;
+	a = (n/10000000);
+    b = ((n/1000000) - a *10);
+    c = (((n/100000) - a * 100) - b * 10);
+    d = ((((n/10000) -a * 1000)- b * 100)-c * 10);
+    e = (((((n/1000) - a * 10000)- b * 1000)-c*100)-d * 10); 
+	f = ((((((n/100) - a *100000)- b * 10000) - c * 1000) - d * 100) - e * 10);
+	g = (((((((n/10) - a * 1000000)- b * 100000)- c * 10000)- d * 1000)- e *100) - f *10); 
+	h = (((((((n - a * 10000000)- b * 1000000)- c * 100000)- d * 10000)- e * 1000) - f * 100)- g * 10);
+	
+	
+	
+    
+    
+	total = a + b + c + d + e + g + h;
+	
+	cout<<h ;
 	
 	return 0;
-}
+}}
